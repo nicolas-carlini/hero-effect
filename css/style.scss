@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Permanent+Marker|Playfair+Display|Raleway|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(160deg, rgb(7, 32, 49), rgb(35, 49, 172), rgb(69, 172, 241) , rgb(185, 40, 40));
+}
+
+.credits{
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color:  rgb(41, 38, 38);
+    padding: 2px 4px 2px 4px;
+
+    transition: .5s;
+}
+
+.credits:hover{
+    animation: boing .18s linear infinite alternate;
+    transition: .5s;
+}
+
+@keyframes boing{
+    to{
+        bottom: 12px;
+    }
+    from{
+        bottom: 10px;
+    }
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effect{
+    &__container{
+        width: 90vw;
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    &__element{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        width: 20vw;
+        height: 80vh;
+        transition: .6s;
+        overflow: hidden;
+        .effect__tittle {
+            width: 100%;
+            height: 80px;
+            font-family: 'Permanent Marker', cursive;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .6s;
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(41, 38, 38);
+            color: white;
+        }
+        &:hover{
+            width: 50vw;
+            transition: .6s;
+            .effect__tittle{
+                transition: .6s;
+                bottom: -100px;
+            }
+        }
+    }
+}
+

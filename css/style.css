@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Permanent+Marker|Playfair+Display|Raleway|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: linear-gradient(160deg, #072031, #2331ac, #45acf1, #b92828);
+}
+
+.credits {
+  position: absolute;
+  bottom: 10px;
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: #292626;
+  padding: 2px 4px 2px 4px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.credits:hover {
+  -webkit-animation: boing .18s linear infinite alternate;
+          animation: boing .18s linear infinite alternate;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@-webkit-keyframes boing {
+  to {
+    bottom: 12px;
+  }
+  from {
+    bottom: 10px;
+  }
+}
+
+@keyframes boing {
+  to {
+    bottom: 12px;
+  }
+  from {
+    bottom: 10px;
+  }
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.effect__container {
+  width: 90vw;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.effect__element {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 20vw;
+  height: 80vh;
+  -webkit-transition: .6s;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.effect__element .effect__tittle {
+  width: 100%;
+  height: 80px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: xx-large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .6s;
+  transition: .6s;
+  position: absolute;
+  bottom: 0;
+  background-color: #292626;
+  color: white;
+}
+
+.effect__element:hover {
+  width: 50vw;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.effect__element:hover .effect__tittle {
+  -webkit-transition: .6s;
+  transition: .6s;
+  bottom: -100px;
+}
+/*# sourceMappingURL=style.css.map */
